@@ -2,14 +2,14 @@
 
 Este repositório contém o projeto de simulação de um robô seguidor de linha desenvolvido no ambiente **CoppeliaSim**. O controle de navegação do robô é realizado através de um **Controlador PID (Proporcional, Integral e Derivativo)** escrito em **Lua**, garantindo que o robô faça curvas suaves e mantenha a estabilidade na pista.
 
-## 🛠️ Tecnologias e Ferramentas Utilizadas
+##  Tecnologias e Ferramentas Utilizadas
 * **Simulador:** CoppeliaSim (V-REP)
 * **Linguagem:** Lua (via *Child Scripts* nativos do simulador)
 * **Controle:** Algoritmo PID Clássico
 * **Cinemática:** Acionamento Diferencial (Differential Drive)
 * **Percepção:** Sensores de Visão Ortográficos (Filtro de intensidade de cor)
 
-## 🧠 Arquitetura do Sistema
+##  Arquitetura do Sistema
 
 O sistema foi modelado para traduzir o mundo físico da simulação em variáveis matemáticas que o algoritmo de controle possa processar:
 
@@ -18,7 +18,7 @@ O sistema foi modelado para traduzir o mundo físico da simulação em variávei
 3. **Controle (PID):** O algoritmo calcula a ação corretiva com base no Erro atual (Proporcional) e na taxa de variação do erro (Derivativo). *Nota: O ganho Integral (Ki) foi mantido em 0 devido à ausência de erros de regime permanente neste ambiente de simulação específico.*
 4. **Output (Atuação):** O sinal de controle gerado ajusta dinamicamente a velocidade individual da roda esquerda e direita, forçando o robô a pivotar e corrigir sua trajetória.
 
-## 🚀 Como Executar o Projeto
+##  Como Executar o Projeto
 
 Para testar esta simulação na sua máquina, siga os passos abaixo:
 
